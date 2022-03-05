@@ -5,7 +5,7 @@ function ouvrirPage()
     alert(" Veuillez renseignez votre recherche ");
   }
   else if (a === "one piece" || a==="op" || a==="OP" || a==="One Piece" || a==="One piece" || a==="ONE PIECE"){
-    window.open("anime./One piece.html","_self") ;
+    window.open("One piece.html","_self") ;
   }else if (a === "sword art online" || a === "Sword Art Online" || a === "Sword art online" || a === "SWORD ART ONLINE" || a === "SAO" || a === "sao"){
     window.open("sword art online.html","_self");
   }else if (a === "Attaque des titans" || a==="Shingeki No Kyojin" || a==="SNK" || a==="snk" || a==="l'attaques des Titans" || a==="Attack on titan"  || a==="L'Attaques des Titans" || a==="L'Attaques Des Titans" || a==="attaques des titans" || a==="ATTAQUE DES TITANS" || a==="attaque des titans"){
