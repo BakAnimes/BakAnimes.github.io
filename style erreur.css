@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+body {
+    font-family: "Advent Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+    background: white;
+    transition: 0.2s linear;
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    }
+li {
+    list-style-type:none;
+}
+h2 {
+text-transform:capitalize;
+text-align: center;
+padding-top: 50;
+font-size: 2em ;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    opacity: 1;
+}
+
+
+
+#logo{
+
+    font-family: 'Dancing Script', cursive;
+    background-color: transparent;
+    font-weight: bold;
+    float:left;
+    font-size: 1.4em;
+    text-decoration: none;
+    
+    }
+
+header a {
+    text-decoration: none;
+    color:black;
+    padding: 5px 20px;
+    
+    }
+
+header > a,
+header .bouton{
+    background-color: transparent;
+    color: black;
+    margin: 0px 20px 0px 20px;
+    font-size: 1.4em;
+}
+header .bouton{
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+header .dropdown{
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+header .dropdown .content{
+    display: none;
+}
+header .dropdown:hover .content{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    /* car height de 70 px dans le header */
+    width: 80%;
+    padding: 5px 10px;
+    box-sizing:content-box;
+    background-color: white;
+}
+header .dropdown:hover .content a{
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.bouton {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-family: "Advent Pro", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4em;
+    cursor: pointer;
+    
+
+}
+
+  .bouton:hover{
+      background-color: transparent;
+      
+  }
+
+  #search{
+    position: relative;
+    border: none;
+    color:#373736;
+    margin-top: 90px;
+    left: 410px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    background-color:#eceeef;
+    display: 100%;
+    margin-left: auto;
+    width:1036px;
+  }
+
+  
+
+  #button{
+    background-color:transparent;
+    position: relative;
+    left: 410px;
+    color: black;
+    cursor:pointer;
+    font-size: 20px;
+    
+  }
+
+/* ****************Mode nuit************** */
+.toggle {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+  }
+
+
+  .checkbox {
+    display: none;
+  }
+
+
+
+  .label {
+    height: 26px;
+    width: 50px;
+    background: rgb(182,182,182);
+    padding: 5px 8px;
+    border-radius: 50px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transform: scale(1.2);
+    box-shadow: 2px 1px 1px #333;
+  }
+
+
+  .label .ball {
+    background: #eee;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    transform: translateX(0px);
+    transition: transform 0.4s cubic-bezier(.45, -1.12, .35,1.78);
+  }
+  .checkbox:checked + .label .ball {
+    transform: translateX(29px);
+  }
+  .fa-moon {
+    color: #333;
+  }
+
+
+  /* DARK MODE */
+ .dark {
+    background: black;
+  }
+  .dark header {
+    background-color: black;
+  }
+  .dark header a{
+    color:#FFAFAF;
+  }
+  .dark  header .bouton{
+    color: #FFAFAF;
+  }
+  .dark header .dropdown:hover .content a{
+    color:#FFAFAF;
+  }
+  .dark header .dropdown:hover .content {
+    background-color: black;
+  }
+  .dark #search{
+    color: #373736;
+    background-color: black;
+  }
+
+  .dark #button{
+    color: white;
+    border: none;
+  }
+  .dark .label {
+    box-shadow: 2px 1px 1px #FFAFAF;
+    background: rgb(88, 87, 87);
+  }
+  .dark .ball {
+    background:red;
+  }

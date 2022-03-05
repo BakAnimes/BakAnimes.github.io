@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charsets="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Bakaa's Blog : information et critique d'anime</title>
+    <meta name="robots" content="none">
+    <meta name="description" content="One Piece, SNK, Naruto. Retrouvez toutes les informations et critiques sur les animes de type Shonen parmi une séléction d'animes à ne pas manquer... ">
+    
+    
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style accueil.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdjs.cloudflare.com/ajax/libs/font-awesomes/5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        
+
+
+</head>
+
+<body>
+        <header id="navbar" class="nav">
+            <div id="logo"><a href="accueil.html">BakAnime</a></div>
+            <div class="dropdown">
+                <button class="bouton"> Catégorie </button>
+                
+                <div class="content">
+                    <a href="Shonen.html">Shonen</a>
+                    <a href="Isekai.html">Isekai</a>
+                    <a href="Drama.html">Drama</a>
+                    <a href="Romance.html">Romance</a>
+                    <a href="Sport.html">Sport</a>
+                    <a href="Horreur.html">Horreur</a>
+                    <a href="Ecchi.html">Ecchi</a>
+                </div>
+                               
+            </div>
+   
+        </header> 
+<!-- *****************************barre de recherche*************** -->
+<div id="searchbarre">
+            <div>
+                <input id="search" type="search"  value="" onchange="ouvrirPage()" placeholder="Rechercher ..."  autocomplete="off" required>
+                <button class="button" type="submit" onclick="ouvriPage()">
+                    <i class="fa fa-search"></i>
+                </button>    
+            </div>
+    </div>
+
+<!-- *********************Mode Nuit************************** -->
+            <div class="toggle">
+                <input type="checkbox" class="checkbox" id="dark-mode" />
+                <label for="dark-mode" class="label">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
+              </div>
+<!-- **************************slideshow anime*********************** -->
+
+<div class="myslide fade">
+    <div class="txt1">
+        <h1><a href="One piece.html" style="text-decoration: none; color: red;" >ONE PIECE </a></h1>
+        
+        <p>Venez découvrir une fiche exclusive sur <br>
+            nos pirates préférés </p>
+    </div>
+    <img  src="https://static.hitek.fr/img/actualite/ill_m/895688555/onepiece.png" style="width: 80%; height: 80%;" alt="Luffy et tous ses nakamas à Wano qui regardent au loin">
+</div>
+
+
+
+<div class="myslide fade">
+    <div class="txt2">
+        <h1><a href="SAO.html" style="text-decoration: none; color: #8319aa;">SWORD ART ONLINE</a></h1>
+        <br>
+        <br>
+        <p>Ici même, une fiche critique sur Sword Art Online,<br>l'Isekai par définition</p>
+    </div>
+    <img src="https://images5.alphacoders.com/314/thumb-1920-314574.png" style="width: 80%; height: 80%;" alt="Kirito et Asuna s'embrassent devant un magnifique couché de soleil devant l'Aincrad">
+</div>
+
+
+
+<div class="myslide fade">
+    <div class="txt3">
+        <h1><a href="Darling.html" style="text-decoration: none; color: #FFAFAF;">DARLING IN THE FRANXX</a></h1>
+        <p>Fiche inédite sur un anime à <br> couper le souffle </p>
+    </div>
+    <img src="https://i.pinimg.com/originals/66/6b/7f/666b7f21646d2c22b2534f367028b57d.png" style="width: 80%; height: 80%;" alt="Zero Two assise sur un rempart regarde loin devant l'horizon">
+</div>
+
+
+<div class="myslide fade">
+    <div class="txt4">
+        <h1><a href="Haikyuu.html" style="text-decoration: none; color: orangered;">Haikyuu</a></h1>
+        <p>Préparez vous à découvrir<br>nos volleyeurs préférés de Karasuno !</p>
+    </div>
+    <img src="https://i.pinimg.com/originals/e6/ab/d0/e6abd02d212ca616da9ef30bfb532c85.jpg" style="width: 80%; height: 80%;" alt="Hinata et toute l'équipe de Karasuno s'apprète à recevoir un service">
+</div>
+
+
+
+<div class="myslide fade">
+    <div class="txt5">
+        <h1><a href="Akame.html" style="text-decoration: none; color:red;">AKAME GA KILL</a></h1>
+        <p>fiche exclusive sur une histoire à en <br> perdre la tête </p>
+    </div>
+    <img src="https://images5.alphacoders.com/554/thumb-1920-554294.jpg" style="width: 80%; height: 80%;" alt="Akame triste et couverte de sang regarde le ciel">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		
+
+		<div class="dotsbox" style="text-align:center">
+
+			<span class="dot" onclick="currentSlide(1)"></span>
+
+			<span class="dot" onclick="currentSlide(2)"></span>
+
+			<span class="dot" onclick="currentSlide(3)"></span>
+
+			<span class="dot" onclick="currentSlide(4)"></span>
+
+			<span class="dot" onclick="currentSlide(5)"></span>
+
+		</div>
+
+
+        <div id="imagePrincipale">
+            <h1> BakAnime</h1>
+            <div id="premierTrait"></div>
+            <h3>Les meilleurs fiches critiques animes</h3>
+        </div>
+
+
+                  
+
+           <div class="container">
+               <h2>
+                   <span>Ne manquez pas mes dernières </span>
+                   <span>fiches animes !</span>
+               </h2>
+               <div class="card-container">
+                    
+                   <div class="card-wrapper">
+                       <div class="card">
+                           <div class="card-front">
+                               <p class="card-nom_anime">
+                               One Piece
+                               </p>
+                           <i class="arrow-icon fas fa-arrow-right"></i>
+                       </div>
+                       <div class="card-back">
+                           <a href="anime./One piece.html" class="btn">Fiche critique One Piece</a>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+           <div class="card-container">
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-front1">
+                        <p class="card-nom_anime">
+                        Shingeki No Kyojin
+                        </p>
+                    <i class="arrow-icon fas fa-arrow-right"></i>
+                </div>
+                <div class="card-back">
+                    <a href="One Piece.html" class="bttn">Fiche critique Shingeki No Kyojin</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="card-container">
+
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="card-front2">
+                    <p class="card-nom_anime">
+                    Haikyuu
+                    </p>
+                <i class="arrow-icon fas fa-arrow-right"></i>
+            </div>
+            <div class="card-back">
+                <a href="One Piece.html" class="bttn">Fiche critique Haikyuu</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+        </div>
+        <div id="deuxiemeTrait"></div>
+        <div id="logo_retour">
+            <a href="accueil.html">BakAnime</a>
+        </div>
+            <div id="info"><p>Retrouvez de nombreuses fiches critiques sur BakAnime <br>
+                    Vous en voulez plus, n'hésitez pas à aller voir les chaines youtube en-dessous. <br> 
+                    Vous y trouverez des AMVS et des productions sur l'univers manga / anime <br>
+            </p>
+        </div>
+
+        <div id="pub">
+            <a class="btnn "href="https://www.youtube.com/channel/UCcCvyNbUeKImSNcvmsgpAWQ" target="blank"> Bakaa Music <i class="fa-brands fa-youtube"></i></a>
+            <a class="btnn "href="https://www.youtube.com/channel/UCFnNsisTpm8Lu0h5GQR--YA" target="blank"> BAN AMV <i class="fa-brands fa-youtube"></i></a>
+            <a class="btnn "href="https://www.youtube.com/channel/UC10e7CZZ18DZKhGPRqIlX_g" target="blank"> Uminaku beats <i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+
+
+        <footer>
+            <section id="me contacter">
+            <h2>Me contacter</h2>
+            </section>
+            
+            
+            <form action="https://formspree.io/f/xbjwyzab"
+            method="post" >
+                <input placeholder="Nom" type="text"  id="pseudo"  size="50" maxlength="30" autocomplete="off" class="form-control" name="nom"/>
+                <input placeholder="e-mail" type="email"  id="email" size="50" maxlength="30" required autocomplete="off" class="form-control" name="email"/>
+                <textarea id ="msg" placeholder="Vos questions ou vos recommandations..." autocomplete="off" name="message"></textarea> 
+       
+<input id="boutonform"type="submit" value="Envoyer">
+            </form>
+            
+            
+            <div id="troisiemeTrait"></div>
+            <div id="copyrightEtIcons">
+                <div id="copyright">
+                    <span>© from Astabruti; 2021</span>
+                </div>
+                <div id="Icons">
+                    <a href="https://www.instagram.com/_erwan_lg_/" target="_blank"><i class="fa fa-instagram"></i></a>
+        
+                </div>
+
+            </div>
+
+
+        </footer>
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <script src="./assets/jquery.min.js" type="text/javascript" ></script>
+              <script src="./assets/bootstrap.js" type="text/javascript" ></script>
+              <script src="./script.js" type="text/javascript" ></script>
+              <script src="./recherche.js" type="text/javascript" ></script>
+              <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+            </body>
+</html>
