@@ -1,0 +1,1027 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html{
+  font-size: 10px;
+}
+body {
+    font-family: "Advent Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+    background: white;
+    transition: 0.2s linear;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    }
+
+li {
+    list-style-type:none;
+}
+
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    opacity: 1;
+    z-index: 2;
+}
+
+
+
+#logo{
+
+    font-family: 'Dancing Script', cursive;
+    background-color: transparent;
+    font-weight: bold;
+    float:left;
+    font-size: 3rem;
+    text-decoration: none;
+    
+    }
+    
+
+header a {
+    text-decoration: none;
+    color:black;
+    padding: 0.5rem 2rem;
+    
+    }
+
+header > a,
+header .bouton{
+    background-color: transparent;
+    color: black;
+    margin: 0rem 2rem 0rem 2rem;
+    font-size: 1.4rem;
+}
+header .bouton{
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 2.6rem;
+}
+header .dropdown{
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+header .dropdown .content{
+    display: none;
+    font-size: 1.6rem;
+}
+header .dropdown:hover .content{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 7rem;
+    /* car height de 70 px dans le header */
+    width: 80%;
+    padding: 0.5rem 1rem;
+    box-sizing:content-box;
+    background-color: white;
+}
+header .dropdown:hover .content a{
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.bouton {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-family: "Advent Pro", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    cursor: pointer;
+    
+
+}
+
+  .bouton:hover{
+      background-color: transparent;
+      
+  }
+
+  #search{
+    position: relative;
+    border: none;
+    color:#373736;
+    margin-top: 9rem;
+    font-size: 2rem;
+    line-height: 5rem;
+    background-color:#eceeef;
+    display: 100%;
+    margin-left: auto;
+    width:50vw;
+  }
+
+  #searchbarre {
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  .button{
+    background-color:transparent;
+    position: relative;
+    color: black;
+    cursor:pointer;
+    font-size: 2.1rem;
+    line-height: 5rem;
+    border: none;
+    width: 2.5vw;
+    
+  }
+  .button:hover{
+     background-color: #d4d1d1;
+  }
+
+/* ****************Mode nuit************** */
+.toggle {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    z-index: 1;
+  }
+
+
+  .checkbox {
+    display: none;
+  }
+
+
+
+  .label {
+    height: 2.6rem;
+    width: 5.0rem;
+    background: rgb(182,182,182);
+    padding: 0.5rem 0.8rem;
+    border-radius: 5.0rem;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transform: scale(1.2);
+    box-shadow: 2px 1px 1px #333;
+  }
+
+
+  .label .ball {
+    background: #eee;
+    border-radius: 50%;
+    height: 2.6rem;
+    width: 2.6rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.6rem;
+    transform: translateX(0px);
+    transition: transform 0.4s cubic-bezier(.45, -1.12, .35,1.78);
+    
+  }
+  .checkbox:checked + .label .ball {
+    transform: translateX(29px);
+  }
+  .fa-moon {
+    color: #333;
+    font-size: 1.6rem;
+  }
+  .fa-sun {
+    color: #373736;
+    font-size: 1.6rem;
+  }
+
+
+  /* DARK MODE */
+ .dark {
+    background: black;
+  }
+  .dark header {
+    background-color: black;
+  }
+  .dark header a{
+    color:#FFAFAF;
+  }
+  .dark  header .bouton{
+    color: #FFAFAF;
+  }
+  .dark header .dropdown:hover .content a{
+    color:#FFAFAF;
+  }
+  .dark header .dropdown:hover .content {
+    background-color: black;
+  }
+  .dark #search{
+    color: #373736;
+    background-color: black;
+  }
+
+  .dark #button{
+    color: white;
+    border: none;
+  }
+  .dark .label {
+    box-shadow: 2px 1px 1px #FFAFAF;
+    background: rgb(88, 87, 87);
+  }
+  .dark .ball {
+    background:red;
+  }
+  .dark .prev {
+    color: white;
+  }
+  .dark .next{
+    color: white;
+  }
+  .dark .prev:hover{
+    color:#FFAFAF ;
+  }
+  .dark .next:hover{
+  color: #FFAFAF;
+  }
+  .dark .dotsbox {
+    color: white;
+  }
+  .dark .active {
+
+    border-color: #FFAFAF; 
+  
+  }
+  .dark .dot:hover{
+    border-color:#FFAFAF;
+  }
+
+  .dark .button{
+    background-color:transparent;
+    color: white;
+    
+  }
+  .dark .button:hover{
+     background-color: #373736;
+     color: #FFAFAF;
+  }
+  .dark .container h2{
+    color: #fd7171;
+  }
+  .dark .container h2 span:nth-child(1) {
+    font-weight: normal;
+    color: #FFAFAF;
+  }
+.dark .card-back {
+  background: rgb(241, 222, 222);
+}
+.dark .card-back a{
+  background-color: black;
+  color: white;
+}
+.dark .card-wrapper:nth-child(odd) .card-back a:hover {
+  background-color: #FFAFAF;
+  color: black;
+}
+.dark #logo_retour a{
+  color: #FFAFAF;
+  text-decoration: none;
+}
+
+.dark #info p{
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+.dark .btnn{
+  background-color: #3b5e9d;
+  color: #FFAFAF;
+}
+.dark footer {
+  background-color:#110f0f;
+}
+.dark input, button {
+ background-color: #373736;
+}
+.dark textarea{
+  background-color: #373736;
+}
+
+
+/* *****************slideshow************ */
+
+.slider{
+
+	position: relative;
+
+	width: 80%;
+  background: #2c3e50; 
+
+}
+
+.myslide{
+
+	height: 655px;
+  text-align: center;
+	display: none;
+  padding-top: 100px;
+	overflow: hidden;
+
+}
+.prev, .next{
+	position: absolute;
+	top: 500px;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 12px;
+	cursor: pointer;
+	color: black;
+	transition: 0.1s;
+	user-select: none;
+}
+
+.prev:hover, .next:hover{
+	color: red; 
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 810px;
+	cursor: pointer;
+  color: black;
+}
+
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid ;
+	border-radius: 50%;
+	margin: 3rem 1rem;
+	cursor: pointer;
+}
+
+/* /2 */
+/* javascript */
+.active {
+	border-color: red; 
+}
+.dot:hover{
+  border-color: red;
+}
+/* /javascript */
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+/* 3 */
+.txt1{
+
+	position: absolute;
+	color: black;
+  font-size: 2.2rem;
+	letter-spacing: 0.1rem;
+
+	line-height: 35px;
+
+	top: 26%;
+
+	left: 13%;
+
+	-webkit-animation-name: posi;
+
+  	-webkit-animation-duration: 2s;
+
+  	animation-name: posi;
+
+  	animation-duration: 4s;
+
+	z-index: 1;
+
+}
+
+.txt2{
+
+	position: absolute;
+	color:rgb(0, 0, 177);
+  font-size: 2.2rem;
+	letter-spacing: 0.1rem;
+	line-height: 35px;
+	top: 30%;
+	left: 13%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 3s;
+	z-index: 1;
+
+}
+.txt3{
+
+	position: absolute;
+	color: red;
+  font-size: 2.2rem;
+	letter-spacing: 0.1rem;
+	line-height: 35px;
+	top: 23%;
+	left: 13%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 1s;
+	z-index: 1;
+
+}.txt4{
+
+	position: absolute;
+	color: white;
+  font-size: 2.2rem;
+	letter-spacing: 0.1rem;
+	line-height: 35px;
+	top: 45%;
+	left: 13%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 1s;
+	z-index: 1;
+
+}.txt5{
+
+	position: absolute;
+	color: red;
+  font-size: 2.2rem;
+	letter-spacing: 0.1rem;
+	line-height: 35px;
+	top: 40%;
+	left: 13%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 1s;
+	z-index: 1;
+
+}
+
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 13%;}
+}
+
+
+
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 13%;}
+}
+
+
+
+
+
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+  }
+
+/* /3 */
+
+
+
+/* 4 */
+/* pour avoir l'image qui glisse */
+img{
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+  	-webkit-animation-duration: 70s;
+  	animation-name: zoomin;
+  	animation-duration: 70s;
+
+}
+
+@-webkit-keyframes zoomin {
+
+  from {transform: scale(1, 1);}
+
+  to {transform: scale(1.5, 1.5);}
+
+}
+
+
+
+
+
+@keyframes zoomin {
+
+  from {transform: scale(1, 1);}
+
+  to {transform: scale(1.5, 1.5);}
+
+}
+
+/* /4 */
+
+
+
+
+
+
+
+/* 5 */
+
+
+
+	
+
+
+
+	@-webkit-keyframes posi2 {
+
+	  from {top: 35%;}
+
+	  to {top: 50%;}
+
+	}
+
+
+
+
+
+	@keyframes posi2 {
+
+	  from {top: 35%;}
+
+	  to {top: 50%;}
+
+	}
+
+
+	.txt p{
+
+		font-size: 13px;
+
+	}
+
+
+
+
+
+/* /5 */
+
+
+
+
+/* @media screen and (max-width: 520px){
+
+                    
+
+	.sign{
+
+		margin-right: 20px;
+
+	}
+
+	.sign a{
+
+		font-size: 12px;
+
+	}
+
+} */
+
+
+/* 
+*********************************image kny******************************* */
+
+#imagePrincipale {
+
+  padding-top: 150px;
+  background: url(https://static.wikia.nocookie.net/fireforce/images/f/fd/Manga.png/revision/latest?cb=20210301205853&path-prefix=fr) no-repeat fixed 50% 50% ;
+  background-size:cover ;
+  height: 650px;
+  filter: brightness(50%)
+ 
+  
+  } 
+  #imagePrincipale h1{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 5.5rem;
+    margin-top: 110px;
+     text-shadow: 10px 10px 4px black;
+    }
+    
+     #premierTrait{
+    
+    height: 2px;
+    width: 15% ;
+    margin: -3px auto; 
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 10px black;
+    
+     }
+    #imagePrincipale h3{
+        font-family: 'Noto Serif JP', serif;
+        text-align: center;
+        color: antiquewhite;
+        font-size: 3rem;
+        text-shadow: 10px 10px 10px black;
+       }  
+       h1{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 5.5rem;
+    margin-top: 110px;
+     text-shadow: 10px 10px 4px black;
+    }
+
+/* fiches animes */
+
+.container {
+  width: 90%;
+  max-width: 1600px;
+  margin: auto;
+  
+}
+
+.container h2{
+  color: black;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  /* border-bottom: 1px dashed rgb(201, 0, 0); */
+  text-align: center;
+  font-size: 5rem;
+}
+
+.container h2 span{
+  display: block;
+}
+
+.container h2 span:nth-child(1) {
+  font-weight: normal;
+  color: black;
+}
+
+.card-container {
+  display:inline-grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 3rem;
+  margin: 6rem 8rem;
+  
+  
+}
+
+.card-wrapper {
+  position: relative;
+  min-height: 350px;
+  perspective: 2000px;
+  perspective-origin: top;
+}
+
+.card-wrapper:hover .card{
+  transform: rotateY(180deg);
+}
+.card{
+  position:relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+  color: red;
+  font-weight: bold;
+}
+.card-front,
+.card-front1,
+.card-front2,
+.card-back{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.card-front{
+  background-image: url(https://m.media-amazon.com/images/I/71-JlBA13EL._AC_SX679_.jpg);
+/* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-front1{
+  background-image: url(https://static.fnac-static.com/multimedia/Images/1C/1C/72/F7/16216604-1505-1505-1/tsp20210115195706/Attack-on-Titan-Shingeki-No-Kyojin-SNK-Anime-Poster-42-x-30-cm-Style-04.jpg);
+/* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-front2{
+  background-image: url(https://m.media-amazon.com/images/I/811C+xGQwnL._AC_SY606_.jpg);
+/* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-front p,
+.card-front1 p,
+.card-front2 p {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+}
+.arrow-icon {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-size: 3rem;
+  color: white;
+}
+.card-nom_anime  {
+  font-size: 4.5rem;
+  top: 0px;
+  position:absolute;
+  text-align: center;
+  right: 180px;
+}
+.card-back {
+  background: rgb(34, 32, 32);
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back a{
+  display: inline-block;
+  border-radius: 100px;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+  background-color: white;
+  font-size: 1.4rem;
+  color: black;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+  position: fixed;
+  bottom: 30px;
+}
+
+.card-wrapper:nth-child(odd) .card-back a:hover {
+  background-color: #d4d1d1;
+  color: red;
+}
+
+#deuxiemeTrait{
+    
+  height: 0.4rem;
+  width: 45% ;
+  margin: 30px auto; 
+  background-color: black;
+  box-shadow: 1px 1px 1px black;
+  
+   }
+#logo_retour {
+  font-size: 4rem ;
+  text-align: center;
+  
+}
+#logo_retour a{
+  color: black;
+  text-decoration: none;
+}
+
+#info p{
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+#pub{
+  margin: 10rem;
+  text-align: center;
+}
+.btnn{
+  background-color: #2c3e50;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 0rem 1.5rem;
+  border-radius: 2rem;
+}
+.btnn:hover{
+  opacity: 0.8;
+  transform: scale(1.01);
+  transition: 0.4s ease-in-out;
+  background-color:#365a7e;
+  color:black;
+  cursor:pointer;
+  transition: 0.3s ease-in-out;
+}
+footer {
+
+  background-color:#524A3A;
+  color: #FFFAE1;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+
+}
+footer h2{
+
+  font-size: 4rem;
+
+}
+form {
+  margin:0 auto;
+  max-width: 900px;
+}
+
+
+input, textarea, button {
+  border: none;
+  width: 60%;
+  padding: 15px 10px;
+  margin: 10px 0;
+  font-size: 2.1rem;
+  font-family: "Advent Pro", sans-serif;
+  border-radius: 8px;
+  background-color: white;
+  
+}
+textarea {
+  height: 140px;
+}
+button {
+  font-size: 2.3rem;
+  background-color:#FFFAE1;
+}
+button:hover {
+  opacity: 0.8;
+  transform: scale(1.01);
+  transition: 0.4s ease-in-out;
+  background-color:grey;
+  color:black;
+  cursor:pointer;
+  transition: 0.3s ease-in-out;
+}
+#troisiemeTrait {
+  height: 1px;
+  width: 55%;
+  background-color: #FFFAE1;
+  margin: 60px auto;
+}
+
+#copyrightEtIcons {
+  display: flex;
+  margin-bottom: 20px;
+  /* marge par rapport au bas */
+  padding: 0 10%;
+  /* pour qu'ils soient collés chacun a leur coté */
+}
+#copyright {
+  width: 50%;
+  text-align: left;
+  color: #FFFAE1;
+  font-size: 1.3rem;
+}
+#Icons {
+  width: 50%;
+  text-align: right;
+}
+
+#Icons a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 2.3em;
+  color: red;
+
+}
+#boutonform:hover{
+  opacity: 0.8;
+  transform: scale(1.01);
+  transition: 0.4s ease-in-out;
+  background-color:grey;
+  color:black;
+  cursor:pointer;
+  transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 930px) {
+      
+      header{
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        opacity: 1;
+        z-index: 2;
+    }
+    
+    #logo{
+      font-size: 2rem;
+           
+      }
+  
+  header a {
+      padding:  0.2rem 0.2rem 0.2rem 1rem;
+      
+      }
+  
+  header > a,
+  header .bouton {
+      margin: 0rem 2rem 0rem 2rem;
+      font-size: 0.7rem;
+  }
+  header .bouton{
+      font-size: 2.0rem;
+  }
+  header .dropdown{
+      height: 100%;
+  }
+  
+  header .dropdown .content{
+      font-size: 1.8rem;
+  }
+  header .dropdown:hover .content{
+      top: 4rem;
+      width: 80%;
+      padding: 0.5rem 1rem;
+  }  
+ 
+  
+    .bouton:hover{
+        background-color: transparent;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+      .myslide{
+    
+        height: 500px;
+    
+      }
+  
+    }
